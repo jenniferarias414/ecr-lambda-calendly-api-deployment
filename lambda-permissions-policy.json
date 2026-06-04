@@ -1,0 +1,29 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadCalendlySecret",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue"
+      ],
+      "Resource": "arn:aws:secretsmanager:us-east-2:272987324508:secret:calendly-api-token*"
+    },
+    {
+      "Sid": "WriteCalendlyOutputToS3",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": "arn:aws:s3:::calendly-api-output-jenny-9b2373/calendly/*"
+    },
+    {
+      "Sid": "ListOutputBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::calendly-api-output-jenny-9b2373"
+    }
+  ]
+}
