@@ -22,7 +22,14 @@ venv/
 source-download/
 README-source.md
 commands-source-original.sh
+commands-original-root.sh
+lambda_function_source_backup.py
 
-# Runtime/test output
+# Temporary AWS/Lambda build artifacts
+lambda-trust-policy.json
+lambda-permissions-policy.json
 response.json
 test-event.json
+
+# Runtime/test output
+*.log
