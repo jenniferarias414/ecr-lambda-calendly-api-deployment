@@ -1,1 +1,0 @@
-{"statusCode": 200, "body": "{\"message\": \"Lambda execution completed successfully\", \"scheduled_calls_path\": \"calendly/calendly_scheduled_calls_2026-06-04_12-18-15.csv\", \"metrics_path\": \"calendly/campaign_metrics_2026-06-04_12-18-15.csv\"}"}
